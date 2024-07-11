@@ -1,0 +1,35 @@
+{
+    "name": "intersoft/stripe",
+    "description": "stripe laravel package",
+    "type": "library",
+    "version": "1.0",
+    "require": {
+        "stripe/stripe-php": "^7.30"
+    },
+    "require-dev": {
+        "stripe/stripe-php": "^7.30"
+    },
+    "autoload": {
+        "psr-4": {
+            "Intersoft\\Stripe\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Intersoft\\Stripe\\": "src",
+            "Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Intersoft\\stripe\\StripeApisServiceProvider"
+            ]
+        }
+    },
+    "authors": [{
+        "name": "Sahil Manuja",
+        "email": "sahil.aipl01@gmail.com"
+    }],
+    "minimum-stability": "dev"
+}
